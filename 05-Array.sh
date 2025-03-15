@@ -1,5 +1,4 @@
 #!/bin/bash
-
 FRUITS=("APPLE" "KIWI" "CHIKOO") 
 
 echo "First fruit is ${FRUITS[0]}"
