@@ -7,7 +7,5 @@ then
 else
   echo "$NUMBER1 is less than 30"
 
-  
-
  
 
