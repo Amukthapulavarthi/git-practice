@@ -12,7 +12,7 @@ dnf list installed git
  if [ $? -ne 0 ]
   then
     echo "git is not there ... please install"
-    dnf install -y
+    dnf install git -y
     if [ $? -ne 0 ]
     then
      echo "git is not installed .. please check"
