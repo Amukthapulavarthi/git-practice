@@ -10,16 +10,16 @@ fi
 dnf list installed git
 
  if [ $? -ne 0 ]
-  then
+ then
     echo "git is not there ... please install"
-     dnf install git -y
-      if [ $? -ne 0 ]
-      then
+    dnf install git -y
+    if [ $? -ne 0 ]
+    then
        echo "git is not installed .. please check"
        exit 1
-     else
-    echo "git installation success"
- fi
+    else
+     echo "git installation success"
+    fi
  else
    echo "git is already installed... nothing to do"
-fi
+ fi
