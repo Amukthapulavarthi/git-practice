@@ -8,11 +8,13 @@ if [ $USERID -ne 0 ]
 fi
 
 dnf list installed git
+
  if [ $? -ne 0 ]
   then
-   echo "git is not there ... please install"
-   dnf install -y
+    echo "git is not there ... please install"
+    dnf install -y
     if [ $? -ne 0 ]
+    then
      echo "git is not installed .. please check"
      exit 1
   else
