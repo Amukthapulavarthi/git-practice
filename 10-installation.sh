@@ -2,7 +2,7 @@
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
- then
+then
   echo " run with root priveledges"
   exit 1
 fi
@@ -15,7 +15,7 @@ then
    dnf install git -y
    if [ $? -ne 0 ]
    then
-     echo "git is  installaton not success   .. please check"
+     echo "git installaton not success   .. please check"
      exit 1
    else
      echo "git installation success"
