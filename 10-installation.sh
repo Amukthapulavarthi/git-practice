@@ -7,12 +7,12 @@ then
   exit 1
 fi
 
-dnf list installed git
+git --version
 
 if [ $? -ne 0 ]
 then
    echo "git is not installed ... please install"
-   dnf install git -y
+   apt install git -y
    if [ $? -ne 0 ]
    then
      echo "git installaton not success   .. please check"
