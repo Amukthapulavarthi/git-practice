@@ -24,19 +24,19 @@ else
     echo "git is already installed... nothing to do"
 fi
 
-mysql --version
+ansible --version
 
 if [ $? -ne 0 ]
 then
-   echo "mysql is not installed ... please install"
-   apt -get install -y mssql -server
+   echo "ansible is not installed ... please install"
+   apt install ansible -y
    if [ $? -ne 0 ]
    then
-     echo "mysql installaton not success   .. please check"
+     echo "ansible installaton not success   .. please check"
      exit 1
    else
-     echo "mysql installation success"
+     echo "ansible installation success"
    fi
 else
-    echo "mysql is already installed... nothing to do"
+    echo "ansible is already installed... nothing to do"
 fi
